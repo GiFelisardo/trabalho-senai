@@ -7,9 +7,9 @@ import io.swagger.v3.oas.annotations.info.Info;
 @Configuration
 @OpenAPIDefinition(
     info = @Info(
-        title = "API",
+        title = "AFG Cars",
         version = "1.0",
-        description = "API para o sistema Exemplo"
+        description = "Giovanna Felisardo, Fabrício Alves, Andressa Leal, Guilherme Sanches e Letícia Teixeira"
     )
 )
 public class Swagger {
