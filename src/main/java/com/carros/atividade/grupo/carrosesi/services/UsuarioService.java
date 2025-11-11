@@ -26,5 +26,14 @@ public class UsuarioService {
         return "Falha ao realizar login";
     }
 
+    public boolean atualizarBoolean(Usuario usuario, Integer id) {
+        Usuario e = usuarioRepository.findById(id).get();
+        if (usuarioRepository.existsById(id)){
+            usuario.setId(id);
+            usuarioRepository.save(usuario);
+            return true;
+        }
+        return false;
+    }
 
 }
